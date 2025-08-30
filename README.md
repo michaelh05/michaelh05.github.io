@@ -17,8 +17,8 @@
   }
   
   .card {
-    flex: 1 1 90vw; /* flexible width */
-    max-width: 45vw; /* desktop side-by-side */
+    flex: 1 1 90vw;
+    max-width: 45vw;
     margin: 1vh 1vw;
     border-radius: 2vh;
     padding: 2vh 2vw;
@@ -87,14 +87,36 @@
   
   .right ul li b { font-weight: 600; }
   
+  /* Mobile adjustments with centered content and proper scaling */
   @media (max-width: 768px) {
-    .container { flex-direction: column; padding: 2vh 2vw; }
-    .card { max-width: 90vw; padding: 3vh 4vw; }
-    .btn, button { width: 90vw; font-size: 3vh; padding: 2vh 0; }
-    h1 { font-size: 5vw; }
-    h2 { font-size: 4.5vw; }
-    ul li { font-size: 3.5vw; line-height: 1.4; }
-    input, textarea, select { width: 90vw; font-size: 3.5vw; padding: 2vw; }
+    .container {
+      flex-direction: column;
+      padding: 2vh 2vw;
+      align-items: center;  /* center all cards */
+      text-align: center;   /* center text */
+    }
+    .card {
+      max-width: 90vw;
+      width: 90vw;
+      padding: 3vh 4vw;
+      margin: 2vh 0;
+    }
+    .left, .right, .form-card { text-align: center; }
+    .btn, button {
+      width: 90vw;
+      font-size: 3vh;
+      padding: 2vh 0;
+      margin: auto;
+    }
+    input, textarea, select {
+      width: 90vw;
+      font-size: 3.5vw;
+      padding: 2vw;
+      margin: auto;
+    }
+    h1 { font-size: 6vw; }
+    h2 { font-size: 5vw; }
+    ul li { font-size: 4vw; line-height: 1.5; text-align: center; }
   }
 </style>
 </head>
