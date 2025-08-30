@@ -6,31 +6,95 @@
 <title>Glorixia Studio Offer</title>
 <style>
   body { margin: 0; font-family: Arial, sans-serif; background: #f3f4f6; color: #333; scroll-behavior: smooth; }
-  .container { display: flex; flex-wrap: wrap; max-width: 1000px; margin: auto; padding: 10px; }
-  .card { flex: 1; min-width: 280px; margin: 10px; border-radius: 16px; padding: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: transform 0.2s, box-shadow 0.2s; background: #fff; }
-  .card:hover { transform: translateY(-2px); box-shadow: 0 8px 16px rgba(0,0,0,0.15); }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2vh 2vw;
+    width: 100vw;
+    box-sizing: border-box;
+  }
+  
+  .card {
+    flex: 1 1 90vw; /* flexible width */
+    max-width: 45vw; /* desktop side-by-side */
+    margin: 1vh 1vw;
+    border-radius: 2vh;
+    padding: 2vh 2vw;
+    box-shadow: 0 0.5vh 1vh rgba(0,0,0,0.1);
+    background: #fff;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-sizing: border-box;
+  }
+  
+  .card:hover { transform: translateY(-0.5vh); box-shadow: 0 1vh 2vh rgba(0,0,0,0.15); }
+  
   .left { background: #fff; }
-  .right { background: #4f46e5; color: #fff; display: flex; flex-direction: column; justify-content: space-between; padding: 25px; line-height: 1.6; }
-  h1, h2 { margin-top: 0; }
+  .right { background: #4f46e5; color: #fff; display: flex; flex-direction: column; justify-content: space-between; padding: 3vh 3vw; line-height: 1.6; }
+  
+  h1 { margin-top: 0; font-size: 3vh; }
+  h2 { margin-top: 0; font-size: 2.5vh; }
+  
   ul { padding: 0; list-style: none; }
-  ul li { margin: 12px 0; font-size: 16px; line-height: 1.5; }
-  .btn, button { display: inline-block; background: linear-gradient(135deg, #6366f1, #4338ca); color: #fff; padding: 12px 20px; border-radius: 12px; text-decoration: none; font-weight: bold; text-align: center; cursor: pointer; transition: background 0.3s, transform 0.2s, box-shadow 0.3s; border: none; }
-  .btn:hover, button:hover { background: linear-gradient(135deg, #4338ca, #6366f1); transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.25); }
-  form { display: flex; flex-direction: column; gap: 14px; margin-top: 20px; }
-  input, textarea, select { padding: 12px; border-radius: 10px; border: 1px solid #ccc; font-size: 16px; width: 100%; box-sizing: border-box; transition: border-color 0.3s, box-shadow 0.3s, transform 0.2s, background 0.3s; background: #fff; }
-  input:hover, textarea:hover, select:hover { border-color: #4f46e5; transform: translateY(-1px); background: #f0f0ff; }
-  input:focus, textarea:focus, select:focus { border-color: #4f46e5; outline: none; box-shadow: 0 0 10px rgba(79,70,229,0.4); background: #fff; }
+  ul li { margin: 1.5vh 0; font-size: 2vh; line-height: 1.5; }
+  
+  .btn, button {
+    display: inline-block;
+    background: linear-gradient(135deg, #6366f1, #4338ca);
+    color: #fff;
+    padding: 1.5vh 3vw;
+    border-radius: 1.5vh;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+    border: none;
+    font-size: 2vh;
+  }
+  .btn:hover, button:hover { background: linear-gradient(135deg, #4338ca, #6366f1); transform: translateY(-0.5vh); box-shadow: 0 1vh 2vh rgba(0,0,0,0.25); }
+  
+  form { display: flex; flex-direction: column; gap: 1.5vh; margin-top: 2vh; }
+  input, textarea, select {
+    padding: 1.5vh 1.5vw;
+    border-radius: 1vh;
+    border: 0.2vh solid #ccc;
+    font-size: 2vh;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.3s, box-shadow 0.3s, transform 0.2s, background 0.3s;
+    background: #fff;
+  }
+  input:hover, textarea:hover, select:hover { border-color: #4f46e5; transform: translateY(-0.2vh); background: #f0f0ff; }
+  input:focus, textarea:focus, select:focus { border-color: #4f46e5; outline: none; box-shadow: 0 0 1vh rgba(79,70,229,0.4); background: #fff; }
+  
   select { color: #333; appearance: none; -webkit-appearance: none; -moz-appearance: none; }
-  a { color: inherit; text-decoration: none; font-weight: bold; }
-  .form-card { background: #4f46e5; color: #fff; padding: 30px; border-radius: 16px; display: none; }
-  label { font-weight: bold; margin-top: 6px; }
-  footer { text-align: center; margin-top: 30px; font-size: 16px; font-weight: bold; color: #222; background: #e5e7eb; padding: 15px 0; border-radius: 12px; }
+  
+  .form-card { background: #4f46e5; color: #fff; padding: 3vh 3vw; border-radius: 2vh; display: none; }
+  label { font-weight: bold; margin-top: 1vh; font-size: 2vh; }
+  
+  footer {
+    text-align: center;
+    margin-top: 3vh;
+    font-size: 2vh;
+    font-weight: bold;
+    color: #222;
+    background: #e5e7eb;
+    padding: 2vh 0;
+    border-radius: 1.5vh;
+  }
+  
   .right ul li b { font-weight: 600; }
+  
   @media (max-width: 768px) {
-    .container { flex-direction: column; padding: 10px; }
-    .btn, button { width: 100%; }
-    .card { padding: 15px; }
-    .right ul li { font-size: 15px; }
+    .container { flex-direction: column; padding: 2vh 2vw; }
+    .card { max-width: 90vw; padding: 3vh 4vw; }
+    .btn, button { width: 90vw; font-size: 3vh; padding: 2vh 0; }
+    h1 { font-size: 5vw; }
+    h2 { font-size: 4.5vw; }
+    ul li { font-size: 3.5vw; line-height: 1.4; }
+    input, textarea, select { width: 90vw; font-size: 3.5vw; padding: 2vw; }
   }
 </style>
 </head>
@@ -62,7 +126,7 @@
         <li><b>Liability Limited</b> to Last 6 Months of Fees</li>
       </ul>
     </div>
-    <p style="font-size: 15px; line-height: 1.5; margin-top: 15px; opacity: 0.9; border-top: 1px solid rgba(255,255,255,0.4); padding-top: 10px;">
+    <p style="font-size: 2vh; line-height: 1.5; margin-top: 2vh; opacity: 0.9; border-top: 0.2vh solid rgba(255,255,255,0.4); padding-top: 1vh;">
       Governing Law: Illinois. Disputes: mediation, then arbitration/court.<br>
       See the Master Services Agreement & Revenue Share Addendum for full terms.
     </p>
@@ -103,7 +167,6 @@
   © 2025 Glorixia Studio
 </footer>
 
-<!-- Scripts -->
 <script>
   const showFormBtn = document.getElementById('showFormBtn');
   const formCard = document.querySelector('.form-card');
@@ -112,7 +175,7 @@
     formCard.scrollIntoView({ behavior: 'smooth' });
   });
 
-  // Generate next 14 days for date dropdown dynamically
+  // Generate next 14 days for date dropdown
   const dateSelect = document.getElementById('dateSelect');
   const today = new Date();
   for (let i = 0; i < 14; i++) {
@@ -126,7 +189,7 @@
     dateSelect.appendChild(opt);
   }
 
-  // Generate time slots (9:00 AM to 5:00 PM, 30-min intervals)
+  // Time slots 9:00 AM - 5:00 PM 30-min intervals
   const timeSelect = document.getElementById('timeSelect');
   for (let h = 9; h <= 16; h++) {
     [0,30].forEach(min => {
@@ -140,6 +203,5 @@
     });
   }
 </script>
-
 </body>
 </html>
