@@ -6,17 +6,16 @@
 <title>Glorixia Studio Offer</title>
 <style>
   body { margin: 0; font-family: Arial, sans-serif; background: #f3f4f6; color: #333; scroll-behavior: smooth; }
-  .container { display: flex; flex-wrap: wrap; max-width: 1000px; margin: auto; padding: 20px; }
-  .card { flex: 1; min-width: 300px; margin: 10px; border-radius: 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 20px; transition: transform 0.2s, box-shadow 0.2s; }
-  .card:hover { transform: translateY(-4px); box-shadow: 0 8px 16px rgba(0,0,0,0.15); }
+  .container { display: flex; flex-wrap: wrap; max-width: 1000px; margin: auto; padding: 10px; }
+  .card { flex: 1; min-width: 280px; margin: 10px; border-radius: 16px; padding: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: transform 0.2s, box-shadow 0.2s; background: #fff; }
+  .card:hover { transform: translateY(-2px); box-shadow: 0 8px 16px rgba(0,0,0,0.15); }
   .left { background: #fff; }
   .right { background: #4f46e5; color: #fff; display: flex; flex-direction: column; justify-content: space-between; padding: 25px; line-height: 1.6; }
   h1, h2 { margin-top: 0; }
   ul { padding: 0; list-style: none; }
-  ul li { margin: 12px 0; font-size: 16px; }
+  ul li { margin: 12px 0; font-size: 16px; line-height: 1.5; }
   .btn, button { display: inline-block; background: linear-gradient(135deg, #6366f1, #4338ca); color: #fff; padding: 12px 20px; border-radius: 12px; text-decoration: none; font-weight: bold; text-align: center; cursor: pointer; transition: background 0.3s, transform 0.2s, box-shadow 0.3s; border: none; }
   .btn:hover, button:hover { background: linear-gradient(135deg, #4338ca, #6366f1); transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.25); }
-  footer { text-align: center; margin-top: 30px; font-size: 16px; font-weight: bold; color: #222; background: #e5e7eb; padding: 15px 0; border-radius: 12px; }
   form { display: flex; flex-direction: column; gap: 14px; margin-top: 20px; }
   input, textarea, select { padding: 12px; border-radius: 10px; border: 1px solid #ccc; font-size: 16px; width: 100%; box-sizing: border-box; transition: border-color 0.3s, box-shadow 0.3s, transform 0.2s, background 0.3s; background: #fff; }
   input:hover, textarea:hover, select:hover { border-color: #4f46e5; transform: translateY(-1px); background: #f0f0ff; }
@@ -25,9 +24,13 @@
   a { color: inherit; text-decoration: none; font-weight: bold; }
   .form-card { background: #4f46e5; color: #fff; padding: 30px; border-radius: 16px; display: none; }
   label { font-weight: bold; margin-top: 6px; }
+  footer { text-align: center; margin-top: 30px; font-size: 16px; font-weight: bold; color: #222; background: #e5e7eb; padding: 15px 0; border-radius: 12px; }
+  .right ul li b { font-weight: 600; }
   @media (max-width: 768px) {
-    .container { flex-direction: column; }
+    .container { flex-direction: column; padding: 10px; }
     .btn, button { width: 100%; }
+    .card { padding: 15px; }
+    .right ul li { font-size: 15px; }
   }
 </style>
 </head>
@@ -52,11 +55,11 @@
     <div>
       <h2>Our Simple Deal</h2>
       <ul>
-        <li><strong>10% of Gross Monthly Revenue</strong></li>
-        <li><strong>2-Year Term</strong> + 1-Year Renewals</li>
-        <li><strong>7-Day Grace Period</strong> on Payments</li>
-        <li><strong>Buyout Option</strong> for Website Ownership</li>
-        <li><strong>Liability Limited</strong> to Last 6 Months of Fees</li>
+        <li><b>10% of Gross Monthly Revenue</b></li>
+        <li><b>2-Year Term</b> + 1-Year Renewals</li>
+        <li><b>7-Day Grace Period</b> on Payments</li>
+        <li><b>Buyout Option</b> for Website Ownership</li>
+        <li><b>Liability Limited</b> to Last 6 Months of Fees</li>
       </ul>
     </div>
     <p style="font-size: 15px; line-height: 1.5; margin-top: 15px; opacity: 0.9; border-top: 1px solid rgba(255,255,255,0.4); padding-top: 10px;">
