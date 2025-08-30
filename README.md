@@ -4,6 +4,15 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Glorixia Studio Offer</title>
+  <!-- Standard favicon for browsers -->
+<link rel="icon" type="image/jpg" sizes="32x32" href="[favicon.png](https://i.pinimg.com/736x/e4/45/63/e4456321de76c092b1002ff2505c65f4.jpg)">
+
+<!-- Apple touch icon (iPhone/iPad home screen & iMessage preview) -->
+<link rel="apple-touch-icon" sizes="180x180" href="[apple-touch-icon.png](https://i.pinimg.com/736x/e4/45/63/e4456321de76c092b1002ff2505c65f4.jpg)">
+
+<!-- Optional: Android / Chrome -->
+<link rel="icon" type="image/jpg" sizes="192x192" href="[android-chrome-192x192.png](https://i.pinimg.com/736x/e4/45/63/e4456321de76c092b1002ff2505c65f4.jpg)">
+
 <style>
   body { margin: 0; font-family: Arial, sans-serif; background: #f3f4f6; color: #333; scroll-behavior: smooth; }
 
