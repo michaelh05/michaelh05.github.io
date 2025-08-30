@@ -146,7 +146,7 @@
         <div>
           <h2>Our Simple Deal</h2>
           <ul>
-            <li>💰 10% of Gross Monthly Revenue</li>
+            <li>💰 8-10% of Gross Monthly Revenue</li>
             <li>📅 2-Year Term + 1-Year Renewals</li>
             <li>⏳ 7-Day Grace Period on Payments</li>
             <li>💻 Buyout Option for Website Ownership</li>
