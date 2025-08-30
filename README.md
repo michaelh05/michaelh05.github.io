@@ -6,20 +6,21 @@
 <title>Glorixia Studio Offer</title>
 <style>
   body { margin: 0; font-family: Arial, sans-serif; background: #f3f4f6; color: #333; scroll-behavior: smooth; }
-  
+
+  /* Desktop default layout */
   .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     padding: 2vh 2vw;
-    width: 100vw;
+    width: 100%;
     box-sizing: border-box;
   }
-  
+
   .card {
-    flex: 1 1 90vw;
-    max-width: 45vw;
-    margin: 1vh 1vw;
+    flex: 1 1 40%; /* Desktop: two cards side by side */
+    max-width: 40vw;
+    margin: 1vh 2vw;
     border-radius: 2vh;
     padding: 2vh 2vw;
     box-shadow: 0 0.5vh 1vh rgba(0,0,0,0.1);
@@ -27,18 +28,18 @@
     transition: transform 0.2s, box-shadow 0.2s;
     box-sizing: border-box;
   }
-  
+
   .card:hover { transform: translateY(-0.5vh); box-shadow: 0 1vh 2vh rgba(0,0,0,0.15); }
-  
-  .left { background: #fff; }
-  .right { background: #4f46e5; color: #fff; display: flex; flex-direction: column; justify-content: space-between; padding: 3vh 3vw; line-height: 1.6; }
-  
+
+  .left { background: #fff; text-align: left; }
+  .right { background: #4f46e5; color: #fff; display: flex; flex-direction: column; justify-content: space-between; padding: 3vh 3vw; line-height: 1.6; text-align: left; }
+
   h1 { margin-top: 0; font-size: 3vh; }
   h2 { margin-top: 0; font-size: 2.5vh; }
-  
+
   ul { padding: 0; list-style: none; }
   ul li { margin: 1.5vh 0; font-size: 2vh; line-height: 1.5; }
-  
+
   .btn, button {
     display: inline-block;
     background: linear-gradient(135deg, #6366f1, #4338ca);
@@ -52,9 +53,10 @@
     transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
     border: none;
     font-size: 2vh;
+    width: auto; /* Desktop width auto */
   }
   .btn:hover, button:hover { background: linear-gradient(135deg, #4338ca, #6366f1); transform: translateY(-0.5vh); box-shadow: 0 1vh 2vh rgba(0,0,0,0.25); }
-  
+
   form { display: flex; flex-direction: column; gap: 1.5vh; margin-top: 2vh; }
   input, textarea, select {
     padding: 1.5vh 1.5vw;
@@ -68,12 +70,12 @@
   }
   input:hover, textarea:hover, select:hover { border-color: #4f46e5; transform: translateY(-0.2vh); background: #f0f0ff; }
   input:focus, textarea:focus, select:focus { border-color: #4f46e5; outline: none; box-shadow: 0 0 1vh rgba(79,70,229,0.4); background: #fff; }
-  
+
   select { color: #333; appearance: none; -webkit-appearance: none; -moz-appearance: none; }
-  
+
   .form-card { background: #4f46e5; color: #fff; padding: 3vh 3vw; border-radius: 2vh; display: none; }
   label { font-weight: bold; margin-top: 1vh; font-size: 2vh; }
-  
+
   footer {
     text-align: center;
     margin-top: 3vh;
@@ -84,16 +86,16 @@
     padding: 2vh 0;
     border-radius: 1.5vh;
   }
-  
+
   .right ul li b { font-weight: 600; }
-  
-  /* Mobile adjustments with centered content and proper scaling */
+
+  /* Mobile adjustments */
   @media (max-width: 768px) {
     .container {
       flex-direction: column;
       padding: 2vh 2vw;
-      align-items: center;  /* center all cards */
-      text-align: center;   /* center text */
+      align-items: center;
+      text-align: center;
     }
     .card {
       max-width: 90vw;
@@ -103,16 +105,18 @@
     }
     .left, .right, .form-card { text-align: center; }
     .btn, button {
-      width: 90vw;
+      width: 100%;
       font-size: 3vh;
       padding: 2vh 0;
       margin: auto;
+      box-sizing: border-box;
     }
     input, textarea, select {
-      width: 90vw;
+      width: 100%;
       font-size: 3.5vw;
       padding: 2vw;
       margin: auto;
+      box-sizing: border-box;
     }
     h1 { font-size: 6vw; }
     h2 { font-size: 5vw; }
