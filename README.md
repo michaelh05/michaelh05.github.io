@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -18,7 +18,6 @@
       font-family: Arial, sans-serif;
       background-color: #f3f4f6;
       color: #333;
-      max-width: 100%;
       overflow-x: hidden;
     }
     .container {
@@ -26,20 +25,22 @@
       justify-content: center;
       align-items: center;
       min-height: 100vh;
-      padding: 2rem;
+      padding: 1rem;
+      width: 100%;
     }
     .content {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 2rem;
-      max-width: 1200px;
       width: 100%;
+      max-width: 1200px;
     }
     .card {
       background: white;
       border-radius: 1rem;
       padding: 2rem;
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      width: 100%;
     }
     h1, h2 {
       margin-bottom: 1rem;
@@ -112,23 +113,19 @@
 
     /* Mobile view fixes */
     @media (max-width: 768px) {
-      .container {
-        padding: 1rem;
-      }
       .content {
         grid-template-columns: 1fr;
-        width: 100%;
         gap: 1.5rem;
-        text-align: center;
+        width: 100%;
+        max-width: 100%;
       }
       .card {
         padding: 1.5rem;
+        width: 100%;
       }
       form input, form select, form button {
-        width: 90%;
-        max-width: 350px;
-        margin-left: auto;
-        margin-right: auto;
+        width: 100%;
+        max-width: 100%;
       }
     }
   </style>
