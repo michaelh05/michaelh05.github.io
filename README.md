@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -7,13 +8,17 @@
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
   <style>
-    body, html {
+    /* Global Reset */
+    * {
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
+    }
+    body, html {
       font-family: Arial, sans-serif;
       background-color: #f3f4f6;
       color: #333;
-      max-width: 100vw;
+      max-width: 100%;
       overflow-x: hidden;
     }
     .container {
@@ -37,7 +42,13 @@
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     }
     h1, h2 {
-      margin-top: 0;
+      margin-bottom: 1rem;
+    }
+    p {
+      margin-bottom: 1rem;
+    }
+    ul {
+      padding-left: 1.2rem;
     }
     .cta {
       display: block;
@@ -62,7 +73,7 @@
     }
     .right-card ul {
       list-style: none;
-      padding: 0;
+      padding-left: 0;
     }
     .right-card li {
       margin-bottom: 1rem;
@@ -101,13 +112,21 @@
 
     /* Mobile view fixes */
     @media (max-width: 768px) {
+      .container {
+        padding: 1rem;
+      }
       .content {
         grid-template-columns: 1fr;
+        width: 100%;
+        gap: 1.5rem;
         text-align: center;
       }
+      .card {
+        padding: 1.5rem;
+      }
       form input, form select, form button {
-        width: 90vw;
-        max-width: 400px;
+        width: 90%;
+        max-width: 350px;
         margin-left: auto;
         margin-right: auto;
       }
@@ -146,7 +165,7 @@
         <div>
           <h2>Our Simple Deal</h2>
           <ul>
-            <li>💰 8-10% of Gross Monthly Revenue</li>
+            <li>💰 10% of Gross Monthly Revenue</li>
             <li>📅 2-Year Term + 1-Year Renewals</li>
             <li>⏳ 7-Day Grace Period on Payments</li>
             <li>💻 Buyout Option for Website Ownership</li>
